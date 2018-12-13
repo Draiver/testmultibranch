@@ -10,7 +10,7 @@ pipeline {
                     scmVars = checkout scm
                     def GIT_BRANCH = scmVars.GIT_BRANCH
                     env.GIT_BRANCH = GIT_BRANCH
-                    echo "${GIT_BRANCH}"
+//                    echo "${GIT_BRANCH}"
                 }
             }    
         }           
