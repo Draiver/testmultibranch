@@ -16,7 +16,7 @@ pipeline {
         }   
         stage('Awaiting for user input') {
             when {
-                  expression { params.REQUESTED_ACTION == 'greeting' }
+                expression { ${env.GIT_BRANCH} == 'origin/Dev' }
            }
             steps {
                 script {
